@@ -61,17 +61,21 @@ COPY people_msg/ people_msg/
 COPY zed_dummy/ zed_dummy/
 
 
-
-
 WORKDIR /root/ros_ws/src
 
 RUN cd .. && source /opt/ros/noetic/setup.bash && catkin init && catkin build
 
 
+#L515 RealSense Camera Installs
+
 WORKDIR /root/ros_ws/src
 
-RUN apt-get install ros-noetic-realsense2-camera -y
+RUN apt-get install ros-noetic-realsense2-camera -y 
 
+#Installs for CV-Bridge for ROS subscriber
+
+#RUN apt-get install ros-noetic-cv-bridge
+#RUN apt-get install ros-noetic-vision-opencv
 
 
 WORKDIR /root/ros_ws/src
