@@ -77,6 +77,10 @@ RUN apt-get install ros-noetic-realsense2-camera -y
 #RUN apt-get install ros-noetic-cv-bridge
 #RUN apt-get install ros-noetic-vision-opencv
 
+#Subscriber Node Python Installs
+
+#RUN apt-get install python-rospy
+
 
 WORKDIR /root/ros_ws/src
 
