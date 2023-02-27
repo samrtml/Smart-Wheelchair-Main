@@ -73,14 +73,6 @@ WORKDIR /root/ros_ws/src
 
 RUN apt-get install ros-noetic-realsense2-camera -y 
 
-#Installs for CV-Bridge for ROS subscriber
-
-#RUN apt-get install ros-noetic-cv-bridge
-#RUN apt-get install ros-noetic-vision-opencv
-
-#Subscriber Node Python Installs
-
-#RUN apt-get install python-rospy
 
 
 WORKDIR /root/ros_ws/src
